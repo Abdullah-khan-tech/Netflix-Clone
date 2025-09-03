@@ -1,28 +1,66 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
 }
-html,body{
-    height: 100vh;
-    width: 100vw;
-    background-color: blue;
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: pink;
+  background-image: url(./images/DE-en-20250825-TRIFECTA-perspective_1fb9c931-6eba-441a-8973-8800e953e12b_medium.jpeg) !important;
+  background: black;
+  opacity: 5;
+  background-size: cover;
+  text-align: center;
 }
- 
-.main-container{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(./images/coverpic.jpeg);
-    background-size: cover;
-    
+header {
+  height: 140px;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6)
+  
 }
-.header{
-    height: 110px;
-    width: 100vw;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
+.main-container {
+  display: flex;
+  justify-content: space-between;
 }
-.logo{
-    background-image: url(./images/netflix\ logo.jfif);
+.logo {
+  position: relative;
+  left: 50px;
+  top: 40px;
+}
+.logo img {
+  border-radius: 10px;
+  height: 80px !important;
+  width: 250px !important;
+}
+.signIn {
+  position: relative;
+  top: 40px;
+  right: 50px;
+}
+.signIn button {
+  height: 70px;
+  width: 170px;
+  border-radius: 8px;
+  background-color: #e50914;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main-container2{
+    position: relative;
+    top: 400px;
+    ;
+   
+}
+.main-container2 .heading{
+    width: 1000px;
+    position: relative;
+    left: 1000px;
+;
+}
+.main-container2 .heading h1{
+    font-size: 110px;
 }
