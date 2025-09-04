@@ -4,62 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    
-    
-    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <div class="main-container">
-        <div class="logo">
-          <img
-            src="./images/netflix-logo bla.jpg"
-            width="220px"
-            height="140px"
-            alt=""
-          />
-        </div>
-        <div class="signIn">
-          <a href=""><button>Sign In</button></a>
-        </div>
+    <!-- navbar startign -->
+    <nav>
+      <div class="logo">
+        <img
+          src="./images/netflix-logo bla.jpg"
+          width="280px"
+          height="120px"
+          alt="logo image"
+          class=""
+        />
       </div>
-    </header>
-    <main>
-      <div class="main-container2">
+      <div class="signIn">
+        <button>SignIn</button>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- main body start -->
+    <div class="main">
+      <div class="overlay"></div>
+      <div class="information">
         <div class="heading">
-          <h1>
-            Unlimted movies, TV Shows, <br />
-            and more
-          </h1>
+          <h1>Unlimted movies, Tv <br />Shows, and more</h1>
         </div>
         <div class="para1">
-          <p>Start at Rs 250 . Cancel anytime.</p>
+          <p>Starts at Rs 250. Cancel anytime.</p>
         </div>
         <div class="para2">
           <p>
-            Ready to Watch? Enter your email to create or restart your
+            Ready to watch? Enter your email to create or restart your
             membership.
           </p>
         </div>
-        <input type="email" placeholder="Email  address" />
-        <button>Get Started <span id="left-arrow"></span></button>
-        <hr id="horizental-line" />
+        <div class="buttonInput">
+          <div class="input">
+            <input type="email" placeholder="Email address" />
+          </div>
+          <div class="startButton">
+            <button>Getting Start</button>
+          </div>
+        </div>
       </div>
-    </main>
+      <div class="horizental">
 
-    <div class="card-section">
-     <div class="cards">
+      </div>
+    </div>
+    <div class="middle">
+     <div class="content">
        <div class="heading">
         <h2>Trending News</h2>
       </div>
-      <div class="card"></div>
-      <div class="card second"></div>
-      <div class="card third"></div>
-      <div class="card fourth"></div>
+      <div class="cards-section">
+       
+      </div>
      </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

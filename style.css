@@ -2,158 +2,146 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
 }
 html,
 body {
-  height: 100vh;
-  width: 100vw;
-  background-color: pink;
-  background: black;
-  opacity: 5;
-  background-size: cover;
-  text-align: center;
   font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
 }
-header {
-  height: 140px;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6)
-  
-}
-.main-container {
+/* navbar starting */
+nav {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 1);
   display: flex;
   justify-content: space-between;
 }
 .logo {
   position: relative;
-  left: 50px;
-  top: 40px;
-}
-.logo img {
-  border-radius: 10px;
-  height: 80px !important;
-  width: 250px !important;
-}
-.signIn {
-  position: relative;
-  top: 40px;
-  right: 50px;
+  z-index: 2;
 }
 .signIn button {
-  height: 70px;
-  width: 170px;
-  border-radius: 8px;
+  width: 200px;
+  height: 80px;
+  position: relative;
+  right: 50px;
+  top: 20px;
+  border-radius: 10px;
   background-color: #e50914;
+  color: white;
+  z-index: 2;
   font-size: 30px;
   font-weight: bold;
 }
+.signIn button:hover {
+  opacity: 0.8;
+}
+/* navbar end */
 
-.main-container2{
-    position: relative;
-    top: 400px;
-    margin: auto;
-   
-}
-.main-container2 .heading{
- 
-;
-}
-.main-container2 .heading h1{
-    font-size: 110px;
-}
-.main-container2 .para1{
-  font-size: 30px;
-  position: relative;
-  top: 10px;
-}
-.main-container2 .para2{
-  font-size: 30px;
-  position: relative;
-  top: 10px;
-}
-.main-container2 input{
-  height: 120px;
-  width: 500px;
-  position: relative;
-  top: 80px;
-  border-radius: 15px;
-   right: 100px;
-  color: black;
-  font-size: 40px;
-  margin: auto;
-  color:wheat;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.main-container2 button{
-  height: 120px;
-  width: 320px;
-  position: relative;
-  top: 80px;
-  border-radius: 15px;
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
-  background-color: #e50914;
-  right: 80px;
-
-
-}
-
-#horizental-line{
-  height: 10px;
-  width: 100vw;
-  position: relative;
-top: 100px;
-background-color: blue;
-}
-
-.card-section{
+/* main body start */
+.main {
+  width: 100%;
   height: 1100px;
-  width: 100vw;
-  border: 2px white;
-  background-color: blue;
-  position: relative;
-  top: 510px;
- 
-  
-
-  
-
-}
-.card-section .cards{
-  height: 700px;
-  width: 100vw;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.card-section .heading{
-  position: relative;
-  bottom: 103px;
-  font-size: 20px;
-}
-.card-section .card{
-  width: 400px;
-  height: 400px;
-  background-image: url(./images/AAAABT--QQ4wqsTMWqkL6PgOy_oo2fHHQ4bFXtP1fEPAZz90nMu3qRQHp1v0eOYP5smMrCHZl1B7ZsgEdJHueVRy3sMN3naXuwV7WR9VrEtQ5ETXLljqiAcT1TeV3zw1bBrtT-m9.webp);
+  background-image: url(./images/DE-en-20250825-TRIFECTA-perspective_1fb9c931-6eba-441a-8973-8800e953e12b_small.jpeg);
   background-size: cover;
+  text-align: center;
+}
+.main .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.main .information {
   position: relative;
-  top: 150px;
-  border: 2px solid white;
+  top: 400px;
+  color: white;
+  font-size: 40px;
+  z-index: 2;
+}
+.information .heading {
+  font-size: 60px;
+}
+.information .para1 {
+  position: relative;
+  top: 40px;
+}
+.information .para2 {
+  position: relative;
+  top: 50px;
+}
 
-}
-.card-section .second{
+.information .input {
   position: relative;
-  left: 20px;
-  
+  top: 100px;
 }
-.card-section .third{
-  position: relative;
-   left: 20px;
+.information .input input {
+  height: 100px;
+  width: 120%;
+  border-radius: 10px;
+  background-color: #191815;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  display: block;
 }
-.card-section .fourth{
+.information .startButton {
   position: relative;
-  left: 20px;
+  left: 200px;
+  top: 100px;
+}
+.information .startButton button {
+  height: 100px;
+  width: 200%;
+  border-radius: 10px;
+  background-color: #e50914;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.startButton button:hover {
+  opacity: 0.8;
+}
+.buttonInput {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin: auto;
+}
 
+.horizental {
+  width: 100%;
+  height: 10px;
+  background-color: deeppink;
+  position: relative;
+  top: 600px;
+  z-index: 2;
+  box-shadow: 10px 10px 10px 10px gray;
+}
+/* Main section Completed */
+
+.middle {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+.middle .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.content .heading {
+  position: absolute;
+  left: 300px;
+  top: 1500px;
+  font-size: 30px;
 }
